@@ -19,8 +19,14 @@ public class MarkdownParse {
             
             if (openBracket == -1 || closeBracket == -1 || openBracket == -1 ||
             closeParen == -1 ) {
-                break;
+
+               break;
+
             }
+            else if(!markdown.contains(".com") || !markdown.contains(".html") ||
+                   !markdown.contains(".edu") || !markdown.contains(".org") ) {
+                       break;
+                   }
 
             else if(openBracket > 0 && markdown.charAt(openBracket-1) == '!') {
                 
@@ -28,6 +34,7 @@ public class MarkdownParse {
             
               continue;
             }
+           
 
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
