@@ -23,10 +23,10 @@ public class MarkdownParse {
                break;
 
             }
-            else if(!markdown.contains(".com") || !markdown.contains(".html") ||
-                   !markdown.contains(".edu") || !markdown.contains(".org") ) {
-                       break;
-                   }
+            //else if(!markdown.contains("com") || !markdown.contains("html") ||
+                   //!markdown.contains("edu") || !markdown.contains("org") ) {
+                      // break;
+                 //  }
 
             else if(openBracket > 0 && markdown.charAt(openBracket-1) == '!') {
                 
