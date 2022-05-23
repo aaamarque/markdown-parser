@@ -12,10 +12,10 @@ import org.junit.*;
 
 public class MarkdownParseTest {
     
-    @Test
-    public void addition() {
-        assertEquals(2, 1 + 1);
-    }
+    //@Test
+    //public void addition() {
+      //  assertEquals(2, 1 + 1);
+    //}
     /*
     @Test
     public void MarkdownTesting() throws IOException {
@@ -45,7 +45,7 @@ public class MarkdownParseTest {
     String content = Files.readString(fileName);
     
     ArrayList<String> links = MarkdownParse.getLinks(content);
-    assertEquals(List.of("url.com", "google.com","google.com","ucsd.edu"), links);
+    assertEquals(List.of("`google.com"), links);
 
    }
 
@@ -55,7 +55,7 @@ public class MarkdownParseTest {
     String content = Files.readString(fileName);
     
     ArrayList<String> links = MarkdownParse.getLinks(content);
-    assertEquals(List.of("a.com", "b.com","a.com", "example.com"), links);
+    assertEquals(List.of("a.com","a.com(())", "example.com"), links);
 
    }
 
@@ -66,7 +66,7 @@ public class MarkdownParseTest {
     
     ArrayList<String> links = MarkdownParse.getLinks(content);
     assertEquals(List.of("https://www.twitter.com","https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule",
-                   "github.com","https://cse.ucsd.edu/"), links);
+                   "https://cse.ucsd.edu/"), links);
 
    }
 
