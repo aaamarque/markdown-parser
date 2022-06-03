@@ -40,7 +40,7 @@ public class MarkdownParseTest {
    }
    */
    @Test 
-   public void MarkdownParseTesting() throws IOException {
+   public void MarkdownParseTesting_Snippet1() throws IOException {
     Path fileName = Path.of("test-file.md");
     String content = Files.readString(fileName);
     
@@ -50,7 +50,7 @@ public class MarkdownParseTest {
    }
 
    @Test 
-   public void MarkdownParseTesting1() throws IOException {
+   public void MarkdownParseTesting_Snippet2() throws IOException {
     Path fileName = Path.of("test-file2.md");
     String content = Files.readString(fileName);
     
@@ -60,7 +60,7 @@ public class MarkdownParseTest {
    }
 
    @Test 
-   public void MarkdownParseTesting3() throws IOException {
+   public void MarkdownParseTesting_Snippet3() throws IOException {
     Path fileName = Path.of("test-file3.md");
     String content = Files.readString(fileName);
     
